@@ -1,0 +1,20 @@
+1- Crear carpeta en la que desarrollar el proyecto
+2- Abrir cmd en dicha carpeta
+3- npm init	//inicialización del gestor de paquetes de node
+4- npm install express
+5- npm install express-generator -g
+6- express --view=pug holamundo
+7- cd holamundo
+8- npm install   <----para instalar unproyecto de git
+9- npm start
+
+
+
+meter todo en una carpeta
+npm install
+crear .env que contenga
+	CONVERSATION_USERNAME = miuser
+	CONVERSATION_PASSWORD = 
+	WORKSPACE_ID = 
+
+dentro de appjs descomentar la linea 33 y 34
