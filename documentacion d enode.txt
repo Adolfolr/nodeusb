@@ -18,3 +18,10 @@ crear .env que contenga
 	WORKSPACE_ID = 
 
 dentro de appjs descomentar la linea 33 y 34
+
+
+Crear carpeta "controller" en el proyecto, dentro crear un .js en el que escribo el codigo que quiera.
+Para ejecutar ese .js --> abro cmd en la carpeta que lo contiene y--> $node <nombre>.js
+
+
+
