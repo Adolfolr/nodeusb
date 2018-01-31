@@ -1,13 +1,16 @@
 var usb = require ('usb');
 const fs = require('fs');
 
-console.log(usb.getDeviceList());
-
 var texto = usb.getDeviceList();
 
-fs.writeFile('prueba.txt', texto, (err) =>{
-    if (err) throw err;
-    console.log('guardado con éxito');
+console.log(texto);
+console.log(typeof(texto));
+
+str = JSON.stringify(texto);
+
+fs.writeFile('prueba.txt', str, (err) =>{
+   if (err) throw err;
+   console.log('guardado con éxito');
 })
 
 
