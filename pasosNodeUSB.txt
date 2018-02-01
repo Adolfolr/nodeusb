@@ -1,0 +1,19 @@
+Instalar todo lo de node, como siempre.
+
+https://www.npmjs.com/package/usb
+https://www.npmjs.com/package/usb-detection
+
+npm install usb
+
+crear carpeta controller
+	dentro, crear controller.js
+		escribir código de prueba que usa el paquete usb
+
+
+para probar a escribir en algún archivo:
+
+npm install fs   <-- dudo que sea necesario, probar la próxima vez a ver si Visual studio lo sugiere.
+
+npm install usb-detection
+
+npm install --global --production windows-build-tools

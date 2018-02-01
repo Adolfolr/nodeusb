@@ -2,43 +2,54 @@ var usb = require ('usb');
 const fs = require('fs');
 var util = require('util');
 
-var texto = usb.getDeviceList();
+// ##############################################
+// Imprime la lista de USB's
+// ##############################################
+// var texto = usb.getDeviceList();
 
-str = JSON.stringify(texto);
+// str = JSON.stringify(texto);
 
-fs.writeFile('prueba.txt', str, (err) =>{
-   if (err) throw err;
-   console.log('guardado con éxito');
-})
+// fs.writeFile('prueba.txt', str, (err) =>{
+//    if (err) throw err;
+//    console.log('guardado con éxito');
+// })
 
-function pasarArray(){
-    var array = str.split("Device");
-    console.log(array);
-    fs.writeFile('prueba2.txt', JSON.stringify(array), (err)=>{
-        if (err) throw err;
-        console.log('22222 con exito');
-    })
-}
-pasarArray();
+// console.log(texto);
 
 
-// var stream = require('stream');
-// var Stream = stream.Stream;
 
-// var ws = new Stream;
-// ws.writable = true;
-
-// ws.write = function(data) {
-//   console.log("input=" + data);
-// }
-
-// ws.end = function(data) {
-//     var str = "prueba";
-//     console.log("bye");
-//     fs.writeFile('asd.txt', str, (err) =>{
+encontrado=usb.findByIds(8086,3);
+console.log(JSON.stringify(encontrado));
+// #################################################
+// pruebas para trabajar con la cosa esta como array
+// ################################################
+// function pasarArray(){
+//     var array = str.split("Device");
+//     //console.log(array);
+//     fs.writeFile('prueba2.txt', JSON.stringify(array), (err)=>{
 //         if (err) throw err;
+//         //console.log('22222 con exito');
 //     })
 // }
+// pasarArray();
 
-// process.stdin.pipe(ws);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
