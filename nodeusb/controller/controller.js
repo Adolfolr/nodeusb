@@ -18,7 +18,7 @@ var util = require('util');
 
 
 
-encontrado=usb.findByIds(8086,3);
+encontrado=usb.findByIds(8086);
 console.log(JSON.stringify(encontrado));
 // #################################################
 // pruebas para trabajar con la cosa esta como array
